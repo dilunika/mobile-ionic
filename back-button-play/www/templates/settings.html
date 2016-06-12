@@ -1,0 +1,17 @@
+<ion-view view-title="Settings" cache-view="true">
+  <ion-content>
+    <div class="list">
+
+      <div class="item item-divider">
+        Pin Settings
+      </div>
+      
+      <ion-toggle ng-model="pinEnabled"
+                  ng-checked="pinEnabled"
+                  ng-change="onPinEnableToggle()">
+          Enable Pin Login
+      </ion-toggle>
+
+    </div>
+  </ion-content>
+</ion-view>

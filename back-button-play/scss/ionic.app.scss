@@ -1,0 +1,129 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+$backgroundColor: #F1F1F1;
+$textColor: #464646;
+$buttonTextColor: #464646;
+$buttonTextColor: #464646;
+$buttonACTextColor: #464646;
+$buttonACColor: #F8F8F8;
+$buttonDelTextColor: #464646;
+$buttonDelColor: #F8F8F8;
+$buttonColor:#F8F8F8;
+
+.view-pin{
+	background-image: url('../img/pin-background.jpg');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+.ILS_lock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: $backgroundColor;
+}
+.ILS_lock-hidden {
+    display: none;
+}
+.ILS_label-row {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    padding-top: 10px;
+    color: $textColor;
+}
+.ILS_circles-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+}
+.ILS_circle {
+    background-color: $backgroundColor;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border:solid 1px $textColor;
+    margin: 0 15px;
+}
+.ILS_numbers-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+}
+.ILS_digit {
+    background-color: $backgroundColor;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border:solid 1px $textColor;
+    margin: 0 15px;
+    text-align: center;
+    padding-top: 19px;
+    // border-radius: 50%;
+    // margin: 0 14px;
+    // width: 60px;
+    // border-radius: 10%;
+    // height: 60px;
+    // text-align: center;
+    // padding-top: 19px;
+    // font-size: 1.1em;
+    // color: $buttonTextColor;
+    // background-color: $buttonColor;
+}
+// .ILS_digit.activated {
+//     -webkit-animation-name: ILS_buttonPress;
+//     animation-name: ILS_buttonPress;
+//     -webkit-animation-duration: 0.3;
+//     animation-duration: 0.3s;
+// }
+.ILS_ac {
+    color: $buttonACTextColor;
+    background-color: $buttonACColor;
+}
+.ILS_del {
+    color: $buttonDelTextColor;
+    background-color: $buttonDelColor;
+}
+.ILS_full {
+    background-color:$textColor;
+}
+.ILS_shake {
+    -webkit-animation-name: ILS_shake;
+    animation-name: ILS_shake;
+    -webkit-animation-duration: 0.5;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
